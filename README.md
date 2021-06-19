@@ -15,3 +15,10 @@ This project containes ESlint Static code analyser
 "devDependencies": {
     "eslint": "^7.28.0"
   }
+
+This project shows:
+1. Building First Custom Component
+2. Outputting Dynamic Data
+3. Passing Data via 'props'
+4. Splitting components into multiple Components
+5. Concept of children props
