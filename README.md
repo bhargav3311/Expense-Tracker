@@ -16,6 +16,8 @@ This project containes ESlint Static code analyser
     "eslint": "^7.28.0"
   }
 
+  Following Udemy Course [https://www.udemy.com/course/react-the-complete-guide-incl-redux/]
+
 This project shows:
 1. Building First Custom Component
 2. Outputting Dynamic Data
