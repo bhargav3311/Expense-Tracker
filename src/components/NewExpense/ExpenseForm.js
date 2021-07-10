@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './ExpenseForm.css'
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
 
     const [enteredTitle, setEnteredTitle] = useState('');
     const [enteredAmount, setEnteredAmount] = useState('');
@@ -20,15 +20,18 @@ const ExpenseForm = () => {
     }
 
     const SubmitHandler = (event) => {
-        event.prevetDefault(); //Prevent default request is being sent
+        console.log("In submit Handler")
+        //event.prevetDefault(); //Prevent default request is being sent
         const expenseData = {
             title: enteredTitle,
             amount: enteredAmount,
             date: new Date(enteredDate)
         };
+        console.log("Expenses Data:" + JSON.stringify(expenseData))
 
 
-        console.log(expenseData);
+        //console.log(expenseData);
+        props.onSaveExpenseData(expenseData);
         setEnteredTitle('');
         setEnteredAmount('');
         setEnteredDate('');
